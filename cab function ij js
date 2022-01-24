@@ -1,0 +1,20 @@
+  var obj={name:2};
+        var addToThis=function(a,b,c){
+            return this.num+a+b+c;
+        };
+  console.log( addToThis.call(obj,3));
+    var arr=[1,2,3];
+ console.log(addToThis.apply(obj,arr));
+
+    var bound=addToThis.bind(obj);
+    console.log(bound(1,2,3));
+    question no4;
+    let student={
+    name:"sanskar",
+    age:"22",
+    printage:function(){
+        console.log(this.name+" "+this.age);
+    }
+}
+student.printage();
+   
